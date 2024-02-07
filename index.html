@@ -1,0 +1,26 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento -->
+<html lang="pt-br"> <!-- Início do elemento HTML com a linguagem definida como português do Brasil -->
+  <head>
+    <meta charset="UTF-8"> <!-- Definição da codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag para configurar a viewport -->
+    <title>Calculadora de Compras</title> <!-- Título da página -->
+  </head>
+  <body>
+    <h1>Calculadora de Compras</h1> <!-- Título principal da página -->
+    <div>
+      <label for="nome">Nome do cliente:</label> <!-- Rótulo para o campo de entrada do nome do cliente -->
+      <input type="text" id="nome"> <!-- Campo de entrada para o nome do cliente -->
+    </div>
+    <div>
+      <label for="kg">Quantidade de quilos comprados:</label> <!-- Rótulo para o campo de entrada da quantidade de quilos comprados -->
+      <input type="number" id="kg"> <!-- Campo de entrada para a quantidade de quilos comprados -->
+    </div>
+    <div>
+      <label for="dia">Dia da semana (0 a 6):</label> <!-- Rótulo para o campo de entrada do dia da semana -->
+      <input type="number" id="dia" min="0" max="6"> <!-- Campo de entrada para o dia da semana com limite mínimo de 0 e máximo de 6 -->
+    </div>
+    <button onclick="calcularTotal()">Calcular Total</button> <!-- Botão para acionar o cálculo do total das compras -->
+    <div id="resultado"></div> <!-- Div para exibir o resultado do cálculo -->
+    <script src="parte2.js"></script> <!-- Inclusão do arquivo JavaScript -->
+  </body>
+</html>
